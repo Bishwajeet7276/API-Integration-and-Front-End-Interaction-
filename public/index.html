@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Integration Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header>
+        <h1>API Integration and Front-End Interaction</h1>
+        <p>Fetch, display, add, edit, and delete items through your own REST API.</p>
+      </header>
+
+      <section class="form-panel">
+        <h2>Add New Item</h2>
+        <form id="item-form">
+          <label>
+            Title
+            <input type="text" id="title" required placeholder="Enter item title" />
+          </label>
+          <label>
+            Description
+            <input type="text" id="description" placeholder="Enter item description" />
+          </label>
+          <button type="submit">Create Item</button>
+        </form>
+      </section>
+
+      <section class="list-panel">
+        <h2>Items</h2>
+        <div id="message" class="message"></div>
+        <ul id="item-list"></ul>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
